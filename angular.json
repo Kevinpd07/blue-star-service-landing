@@ -32,6 +32,9 @@
             "outputMode": "server",
             "ssr": {
               "entry": "src/server.ts"
+            },
+            "outputPath": {
+              "base": "dist/blue-star-service-landing"
             }
           },
           "configurations": {
@@ -72,6 +75,17 @@
         },
         "test": {
           "builder": "@angular/build:unit-test"
+        },
+        
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/blue-star-service-landing/",
+            "buildTarget": "blue-star-service-landing:build:production",
+            "deployBranch": "gh-pages",
+            "name": "Kevinpd07",
+            "email": "kevinpd1207@gmail.com"  
+          }
         }
       }
     }
