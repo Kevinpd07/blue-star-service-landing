@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   template: `<div class="w-full">
       <img
-        src="assets/images/barco1.png"
+        src="assets/images/barco2.jpeg"
         alt="Barco"
         class="w-full h-auto object-cover shadow-lg"
       />
